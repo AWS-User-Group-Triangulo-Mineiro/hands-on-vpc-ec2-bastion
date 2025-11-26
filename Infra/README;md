@@ -1,0 +1,11 @@
+terraform init
+terraform plan
+terraform apply
+
+==
+pega o IP da EC2 pública:
+ssh -i demo-key.pem ec2-user@<bastion_public_ip>
+
+
+E de dentro dela, acessa a EC2 privada:
+ssh ec2-user@<backend_private_ip> 
